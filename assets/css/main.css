@@ -158,7 +158,7 @@ h2 {
 
 .blog-container .images-banner {
     width: 100%;
-    height: 100%;
+    max-height: 100%;
 }
 
 .blog-container a {
