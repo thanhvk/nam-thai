@@ -1,5 +1,233 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-bottom: 70px;
+}
+
+.form-control,
+.btn {
+    font-size: 13px;
+}
+
+.card {
+    border: 1px solid #797979;
+}
+
+.card-title {
+    font-weight: 500;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 15px 15px 10px 15px;
+    margin-bottom: 0;
+    background-color: #0d8f61;
+    color: #fff;
+}
+
+.card-body {
+    padding-top: 10px;
+}
+
+.card-footer {
+    background-color: initial;
+}
+
+.table thead th {
+    vertical-align: middle;
+    border-top: none;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+
+.btn-non-bg {
+    background-color: transparent;
+    border: 1px solid #0d8f61;
+    color: #0d8f61;
+}
+
+.btn-nt {
+    background-color: #0d8f61;
+    color: #fff;
+}
+
+/** 
+ * Posts page 
+ */
+
+.posts-page .user-info {
+    margin-bottom: 20px;
+}
+
+.posts-page .user-quick-info .user-name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.posts-page .user-quick-info .user-email {
+    margin-bottom: 0;
+}
+
+.posts-page .card-title {
+    background-color: initial;
+    color: #0d8f61;
+    border-bottom: 1px solid #797979;
+    font-weight: 700;
+}
+
+.posts-page .search-options .form-group {
+    margin-bottom: 0;
+}
+
+.posts-page .search-options .btn-search {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.posts-page .search-options input,
+.posts-page .search-options select {
+    margin-bottom: 10px;
+}
+
+.posts-page .btn-group-type-search {
+    width: 100%;
+    border: 1px solid #797979;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.posts-page .btn-group-type-search .btn-type-search:first-child {
+    border-right: 1px solid #797979;
+}
+
+.posts-page .btn-group-type-search .btn-type-search {
+    width: 50%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    background-color: initial;
+}
+
+.posts-page .btn-group-type-search .btn-type-seach-active {
+    background-color: #0d8f61;
+    color: #fff;
+}
+
+.posts-page .posts-table tr:nth-child(2n) {
+    background-color: #f6f4f5;
+}
+
+.posts-page .posts-table thead th {
+    background-color: #0d8f61;
+    color: #fff;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.posts-page .posts-table td {
+    font-size: 16px;
+}
+
+.posts-page .posts-table .post-short-des {
+    margin-bottom: 7px;
+}
+
+.posts-page .posts-table .post-date {
+    font-size: 14px;
+}
+
+.posts-page .posts-table .fa:not(:last-child) {
+    margin-right: 5px;
+}
+
+/** 
+ * User information page 
+ */
+
+.user-page .user-quick-info {
+    margin-bottom: 35px;
+}
+
+.user-page .user-quick-info .user-name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.user-page .user-quick-info .user-email {
+    margin-bottom: 10px;
+}
+
+.user-page .user-table-transactions th {
+    font-weight: 500;
+    color: #0d8f61;
+}
+
+/** 
+ * Packages page 
+ */
+
+.packages-page .packages-for-buy {
+    margin-top: 80px;
+}
+
+.packages-page .packages-header {
+    display: inline-block;
+    background-color: #0d8f61;
+    padding: 5px 20px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.packages-page .package {
+    border: 1px solid #797979;
+    box-shadow: 3px 3px 3px #c7c7c7;
+    padding: 20px 40px;
+}
+
+.packages-page .package-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.packages-page .package-price {
+    font-size: 40px;
+    font-weight: 500;
+    color: #0d8f61;
+    margin-bottom: 10px;
+}
+
+.packages-page .package-features-list {
+    font-size: 18px;
+}
+
+.packages-page .package-features-list li {
+    margin-bottom: 7px;
+}
+
+.packages-page .package-features-list i {
+    color: #0d8f61;
+    margin-right: 5px;
+}
+
+.packages-page .btn-package {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    border-radius: 0;
+    padding: 7px 35px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.packages-page .btn-package:hover {
+    background-color: #0d8f61;
+    color: #fff;
+}
+
 @media (min-width: 1200px) {
-    .container {
+    .container-fluid {
         max-width: 1457px;
     }
 }

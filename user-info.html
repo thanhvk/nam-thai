@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
 
     <!-- Bootstrap CSS -->
@@ -15,7 +15,7 @@
     <title>Nam Thái</title>
 </head>
 
-<body>
+<body class="user-page">
     <header class="container">
         <div class="row">
             <nav class="navbar-custom navbar navbar-expand-lg navbar-light col-lg-12">
@@ -62,84 +62,91 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-5 col-md-5">
-                <h4>Thông tin chung</h4>
+            <div class="col-md-5">
+                <div class="user-info card">
+                    <div class="card-title text-uppercase">Thông tin chung</div>
+                    <div class="card-body">
+                        <div class="media user-quick-info d-flex align-items-center">
+                            <img class="align-self-center mr-3" src="./assets/images/avatar.jpg" alt="avatar">
+                            <div class="media-body">
+                                <h5 class="user-name">Nguyễn Văn A</h5>
+                                <p class="user-email">test@bds.vn</p>
+                                <button class="btn btn-non-bg">Thay đổi thông tin</button>
+                            </div>
+                        </div>
 
-                <div class="media">
-                    <img class="align-self-center mr-3" src=".../64x64" alt="avatar">
-                    <div class="media-body">
-                        <h5 class="mt-0">Nguyễn Văn A</h5>
-                        <p>test@bds.vn</p>
-                        <button class="btn btn-default">Thay đổi thông tin</button>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="phone">Điện thoại</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="package">Gói cước</label>
+                                        <input type="text" class="form-control" id="package">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="active-date">Ngày kích hoạt</label>
+                                        <input type="text" class="form-control" id="active-date">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="manager">Người quản lý</label>
+                                        <input type="text" class="form-control" id="manager">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 d-flex flex-column">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="tel" class="form-control" id="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Khu vực</label>
+                                        <select class="form-control">
+                                            <option>Cầu Giấy</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="expire-date">Ngày hết hạn</label>
+                                        <input type="text" class="form-control" id="expire-date">
+                                    </div>
+                                    <div class="form-group mt-auto">
+                                        <button class="btn btn-nt">Thay đổi thông tin</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-
-                <form>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="phone">Điện thoại</label>
-                                <input type="tel" class="form-control" id="phone">
-                            </div>
-                            <div class="form-group">
-                                <label for="package">Gói cước</label>
-                                <input type="text" class="form-control" id="package">
-                            </div>
-                            <div class="form-group">
-                                <label for="active-date">Ngày kích hoạt</label>
-                                <input type="text" class="form-control" id="active-date">
-                            </div>
-                            <div class="form-group">
-                                <label for="manager">Người quản lý</label>
-                                <input type="text" class="form-control" id="manager">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="tel" class="form-control" id="email">
-                            </div>
-                            <div class="form-group">
-                                <label>Khu vực</label>
-                                <select class="form-control">
-                                    <option>Cầu Giấy</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="expire-date">Ngày hết hạn</label>
-                                <input type="text" class="form-control" id="expire-date">
-                            </div>
-                            <div class="form-group">
-                                <button class="btn btn-default">Thay đổi thông tin</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
             </div>
 
-            <div class="col-lg-7 col-md-5">
-                <h4>Lịch sử giao dịch</h4>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Ngày</th>
-                            <th scope="col">Tên giao dịch</th>
-                            <th scope="col">Hình thức thanh toán</th>
-                            <th scope="col">Số tiền</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>14-09-2018</td>
-                            <td>Thanh toán tiền thuê nhà</td>
-                            <td>Chuyển khoản</td>
-                            <td>5,000,000 VND</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="col-md-7">
+                <div class="user-transactions card">
+                    <div class="card-title text-uppercase">Lịch sử giao dịch</div>
+                    <div class="card-body">
+                        <table class="table user-table-transactions">
+                            <thead>
+                                <tr class="text-uppercase">
+                                    <th scope="col">Ngày</th>
+                                    <th scope="col">Tên giao dịch</th>
+                                    <th scope="col">Hình thức thanh toán</th>
+                                    <th scope="col">Số tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>14-09-2018</td>
+                                    <td>Thanh toán tiền thuê nhà</td>
+                                    <td>Chuyển khoản</td>
+                                    <td>5,000,000 VND</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
