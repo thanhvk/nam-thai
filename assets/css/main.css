@@ -203,6 +203,94 @@ body {
     color: #0d8f61;
 }
 
+.posts-page .posts-footer-content {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.posts-page .posts-footer-content .pagination {
+    margin-bottom: 0;
+}
+
+.posts-page .page-item.active .page-link {
+    background-color: #0d8f61;
+    border-color: #0d8f61;
+    color: #fff;
+}
+
+.posts-page .posts-footer-content .page-link {
+    padding: 7px 12px;
+    color: #0d8f61;
+}
+
+.posts-page .details-table .row:not(:last-child) {
+    border-bottom: 1px solid #797979;
+}
+
+.posts-page .details-table .col-4 {
+    border-right: 1px solid #797979;
+}
+
+.posts-page .details-table .cell {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.posts-page #details-modal .modal-header {
+    background-color: #0d8f61;
+    color: #fff;
+}
+
+.posts-page #details-modal .close {
+    opacity: 1;
+}
+
+.posts-page #details-modal .close span {
+    font-size: 18px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 25px;
+    background-color: #fff;
+    color: #0d8f61;
+}
+
+.posts-page #details-modal .modal-footer .close {
+    float: left;
+    margin-right: 10px;
+}
+
+.posts-page #details-modal .modal-footer .close-text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 3px;
+    color: #0d8f61;
+}
+
+.posts-page #details-modal .modal-footer .close span {
+    background-color: #0d8f61;
+    color: #fff;
+}
+
+.posts-page .images-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.posts-page .images-gallery .gallery-item {
+    width: 22%;
+    margin-top: 4%;
+}
+
+.posts-page .images-gallery .gallery-item:not(:nth-child(4n)) {
+    margin-right: 4%;
+}
+
+.posts-page .images-gallery .gallery-item img {
+    max-width: 100%;
+}
+
 /** 
  * User information page 
  */
@@ -289,16 +377,6 @@ body {
     color: #fff;
 }
 
-@media (min-width: 1200px) {
-    .container-fluid {
-        max-width: 1457px;
-    }
-
-    .modal-lg {
-        min-width: 1024px;
-    }
-}
-
 @media (min-width: 1024px) {
     .header-section .navbar-nav .nav-item:not(:last-child) {
         border-right: 1px solid #0d8f61;
@@ -315,5 +393,15 @@ body {
 
     .modal-lg {
         min-width: 900px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-fluid {
+        max-width: 1457px;
+    }
+
+    .modal-lg {
+        min-width: 1100px;
     }
 }

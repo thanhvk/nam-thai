@@ -211,6 +211,27 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="card-footer d-flex justify-content-end">
+                        <div class="posts-footer-content ">
+                            <div>Tìm thấy 3 tin phù hợp</div>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" tabindex="-1">
+                                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -223,12 +244,12 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Thông tin chi tiết</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-lg-8">
                             <div class="card">
                                 <div class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
                                 <div class="card-body">
@@ -241,6 +262,9 @@
                                         <li>Consectetur adipiscing elit</li>
                                         <li>Porta ut porttitor ac</li>
                                         <li>Auctor vel ipsum</li>
+                                        <li>Enim sed consectetur malesuada</li>
+                                        <li>Ipsum ipsum sollicitudin nibh</li>
+                                        <li>Id euismodmi leo at nulla</li>
                                         <li>Enim sed consectetur malesuada</li>
                                         <li>Ipsum ipsum sollicitudin nibh</li>
                                         <li>Id euismodmi leo at nulla</li>
@@ -257,87 +281,89 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="details-table">
+                        <div class="col-lg-4 d-flex flex-column">
+                            <div class="details-table container-fluid card mb-auto">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-4 font-weight-bold cell">
                                         Điện thoại
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-8 cell">
                                         0972199014
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-4 font-weight-bold cell">
                                         Giá hoa hồng
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-8 cell">
                                         8 triệu <br>
                                         50%
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-4 font-weight-bold cell">
                                         Danh mục
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-8 cell">
                                         Cho thuê nhà riêng
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-4 font-weight-bold cell">
                                         Địa điểm
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-8 cell">
                                         Xuân Thủy - Cầu Giấy - HN
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-4 font-weight-bold cell">
                                         Dự án
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-8 cell">
                                         Khu đô thị
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-4 font-weight-bold cell">
                                         Ngày đăng
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-8 cell">
                                         17-09-2018
                                     </div>
                                 </div>
                             </div>
+
                             <div class="images-gallery">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="./assets/images/gallery-01.jpg" alt="">
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="./assets/images/gallery-02.jpg" alt="">
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="./assets/images/gallery-03.jpg" alt="">
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="./assets/images/gallery-04.jpg" alt="">
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="./assets/images/gallery-05.jpg" alt="">
-                                    </div>
-                                    <div class="col-3">
-                                        <img src="./assets/images/gallery-06.jpg" alt="">
-                                    </div>
+                                <div class="gallery-item">
+                                    <img src="./assets/images/gallery-01.jpg" alt="">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="./assets/images/gallery-02.jpg" alt="">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="./assets/images/gallery-03.jpg" alt="">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="./assets/images/gallery-04.jpg" alt="">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="./assets/images/gallery-05.jpg" alt="">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="./assets/images/gallery-06.jpg" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer d-flex">
-                    <button type="button" class="close mr-auto">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <div class="mr-auto">
+                        <button type="button" class="close">
+                            <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
+                        </button>
+                        <span class="close-text">Đóng</span>
+                    </div>
                     <button type="button" class="btn btn-non-bg">Lưu tin</button>
                     <button type="button" class="btn btn-non-bg">Đã giao dịch</button>
                     <button type="button" class="btn btn-non-bg">Báo cáo tin môi giới</button>
