@@ -5,8 +5,9 @@ body {
 }
 
 .form-control,
-.btn {
-    font-size: 13px;
+.btn,
+.modal {
+    font-size: 14px;
 }
 
 .card {
@@ -292,6 +293,10 @@ body {
     .container-fluid {
         max-width: 1457px;
     }
+
+    .modal-lg {
+        min-width: 1024px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -306,5 +311,9 @@ body {
 
     .header-section .navbar-nav .nav-link {
         padding: 0 30px;
+    }
+
+    .modal-lg {
+        min-width: 900px;
     }
 }

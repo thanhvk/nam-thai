@@ -11,6 +11,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/jquery.fancybox-1.3.4.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <title>Nam Thái</title>
 </head>
@@ -150,9 +151,12 @@
                         <tbody>
                             <tr>
                                 <td class="align-middle">
-                                    <div class="post-short-des">Chính chủ cho thuê văn phòng Trần Thái Tông miễn phí
-                                        một tháng tiền thuê, chỉ từ
-                                        5tr/ tháng</div>
+                                    <div class="post-short-des">
+                                        <a href="javascript:void(0)" class="short-des-link">
+                                            Chính chủ cho thuê văn phòng Trần Thái Tông miễn phí một tháng tiền thuê,
+                                            chỉ từ 5tr/ tháng
+                                        </a>
+                                    </div>
                                     <div class="post-date">
                                         <i class="fa fa-calendar" aria-hidden="true"></i>
                                         <span>Ngày đăng 13-09-2018</span>
@@ -211,11 +215,149 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade bd-example-modal-lg" id="details-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Thông tin chi tiết</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio
+                                        turpis, porta ut porttitor ac, auctor vel ipsum. Suspendisse ullamcorper,
+                                        enim sed consectetur malesuada, ipsum ipsum sollicitudin nibh, id euismod
+                                        mi leo at nulla.</p>
+                                    <p>Lorem ipsum dolor sit amet</p>
+                                    <ul>
+                                        <li>Consectetur adipiscing elit</li>
+                                        <li>Porta ut porttitor ac</li>
+                                        <li>Auctor vel ipsum</li>
+                                        <li>Enim sed consectetur malesuada</li>
+                                        <li>Ipsum ipsum sollicitudin nibh</li>
+                                        <li>Id euismodmi leo at nulla</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet</p>
+                                    <ul>
+                                        <li>Consectetur adipiscing elit</li>
+                                        <li>Porta ut porttitor ac</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio
+                                        turpis, porta ut porttitor ac, auctor vel ipsum. Suspendisse ullamcorper,
+                                        enim sed consectetur malesuada, ipsum ipsum sollicitudin nibh, id euismod
+                                        mi leo at nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="details-table">
+                                <div class="row">
+                                    <div class="col-4">
+                                        Điện thoại
+                                    </div>
+                                    <div class="col-8">
+                                        0972199014
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        Giá hoa hồng
+                                    </div>
+                                    <div class="col-8">
+                                        8 triệu <br>
+                                        50%
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        Danh mục
+                                    </div>
+                                    <div class="col-8">
+                                        Cho thuê nhà riêng
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        Địa điểm
+                                    </div>
+                                    <div class="col-8">
+                                        Xuân Thủy - Cầu Giấy - HN
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        Dự án
+                                    </div>
+                                    <div class="col-8">
+                                        Khu đô thị
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        Ngày đăng
+                                    </div>
+                                    <div class="col-8">
+                                        17-09-2018
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="images-gallery">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="./assets/images/gallery-01.jpg" alt="">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="./assets/images/gallery-02.jpg" alt="">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="./assets/images/gallery-03.jpg" alt="">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="./assets/images/gallery-04.jpg" alt="">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="./assets/images/gallery-05.jpg" alt="">
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="./assets/images/gallery-06.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex">
+                    <button type="button" class="close mr-auto">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <button type="button" class="btn btn-non-bg">Lưu tin</button>
+                    <button type="button" class="btn btn-non-bg">Đã giao dịch</button>
+                    <button type="button" class="btn btn-non-bg">Báo cáo tin môi giới</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./assets/js/jquery-3.3.1.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.fancybox-1.3.4.pack.js"></script>
+    <script>
+        $(function () {
+            $('.short-des-link').on('click', function () {
+                $('#details-modal').modal({})
+            });
+        });
+    </script>
 </body>
 
 </html>
